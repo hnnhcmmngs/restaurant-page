@@ -62,7 +62,6 @@ button:hover {
 
 #content {
     flex-grow: 1;
-    overflow: auto;
     min-height: 2em;
     display: flex;
     flex-direction: column;
@@ -111,10 +110,11 @@ em {
 #content.cards {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 32px;
     padding: 32px;
+    overflow: auto;
 }
 
 #content.cards>div {
@@ -152,4 +152,10 @@ em {
 
 .menu>div>div:last-child {
     font-size: 12px;
+}
+
+.aboutinfo>div:first-child, .open>div:first-child, .contactinfo>div:first-child {
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-align: center;
 }

@@ -1,7 +1,9 @@
 export default function loadAbout() {
     const content = document.querySelector("#content");
+    content.classList = "cards";
 
     let aboutInfo = document.createElement("div");
+    aboutInfo.classList = "aboutinfo";
     let about = document.createElement("div");
     about.textContent = "About Us";
     let desc = document.createElement("div");
@@ -10,6 +12,7 @@ export default function loadAbout() {
     aboutInfo.appendChild(desc);
 
     let open = document.createElement("div");
+    open.classList = "open";
     let hours = document.createElement("div");
     hours.textContent = "Hours"
     let weekday = document.createElement("div");
@@ -21,6 +24,7 @@ export default function loadAbout() {
     open.appendChild(weekends);
 
     let contactInfo = document.createElement("div");
+    contactInfo.classList = "contactinfo";
     let contact = document.createElement("div");
     contact.textContent = "Contact Us";
     let number = document.createElement("div");
