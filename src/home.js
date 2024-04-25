@@ -1,5 +1,6 @@
 export default function loadHome() {
     const content = document.querySelector("#content");
+    content.classList = "";
 
     let intro = document.createElement("div");
     let line1 = document.createElement("p");

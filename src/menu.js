@@ -1,7 +1,9 @@
 export default function loadMenu() {
     const content = document.querySelector("#content");
+    content.classList = "cards";
 
     let h = document.createElement("div");
+    h.classList = "menuintro";
     let title = document.createElement("div");
     title.textContent = "Fixed Menu";
     let price = document.createElement("div");
@@ -32,6 +34,7 @@ export default function loadMenu() {
     ];
 
     let menu = document.createElement("div");
+    menu.classList = "menu";
 
     for (let item of menuItems) {
         let course = document.createElement("div");
